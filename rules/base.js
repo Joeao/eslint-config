@@ -133,11 +133,8 @@ module.exports = {
 			}
 		],
 
-		// Non jsdoc multi line comments should be separate single line comments rather than using a block comment.
-		"multiline-comment-style": [
-			"warn",
-			"separate-lines"
-		],
+		// Disable: Non jsdoc multi line comments should be separate single line comments rather than using a block comment.
+		"multiline-comment-style": "off",
 
 		// Allow `new something()` (lowercase first letter) because this is useful when you want to instantiate
 		// a variable.
