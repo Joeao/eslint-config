@@ -16,12 +16,21 @@ module.exports = {
 		// https://eslint.org/docs/rules/arrow-parens
 		"arrow-parens": [
 			"error",
-			"always",
+			"always"
 		],
 
 		// Disable enforcing that class methods utilize 'this'.
 		// This tries to make you convert methods that do not use 'this' into static methods.
 		"class-methods-use-this": "off",
+
+		// require trailing commas in multiline object literals
+		"comma-dangle": ["error", {
+			arrays: "never",
+			objects: "never",
+			imports: "never",
+			exports: "never",
+			functions: "never"
+		}],
 
 		// Don't require a default case in switch statements
 		// https://eslint.org/docs/rules/default-case
@@ -35,7 +44,7 @@ module.exports = {
 			js: "never",
 			// Require the extension for .vue files because if you are using typescript with Vue and using
 			// aliases, tslint will complain about not finding the module.
-			vue: "always",
+			vue: "always"
 		}],
 
 		// Disable the Airbnb requirement that module imports come before our own files, because it's much easier
@@ -52,34 +61,34 @@ module.exports = {
 			"tab",
 			{
 				// Indent switch case:
-				SwitchCase: 1,
-			},
+				SwitchCase: 1
+			}
 		],
 
 		// Reports invalid alignment of JSDoc block asterisks.
 		"jsdoc/check-alignment": [
-			"error",
+			"error"
 		],
 
 		// Ensures that parameter names in JSDoc match those in the function declaration.
 		"jsdoc/check-param-names": [
-			"error",
+			"error"
 		],
 
 		// Ensures jsdoc conforms to Google Closure Compiler syntax.
 		"jsdoc/check-syntax": [
-			"error",
+			"error"
 		],
 
 		// Require a blank line between the description and tags in a jsdoc.
 		"jsdoc/newline-after-description": [
 			"error",
-			"always",
+			"always"
 		],
 
 		// Ensure all params are present in the jsdoc if there is one.
 		"jsdoc/require-param": [
-			"error",
+			"error"
 		],
 
 		// Require a return tag in the jsdoc if the function returns something.
@@ -97,7 +106,7 @@ module.exports = {
 		// Disable: Line comments should go above the line not on the same line.
 		// Sometimes it's useful to have the comment on the same line.
 		"line-comment-position": [
-			"off",
+			"off"
 		],
 
 		"lines-between-class-members": ["warn", "always"],
@@ -119,14 +128,14 @@ module.exports = {
 				// ignore lines that contain a double-quoted or single-quoted string
 				ignoreStrings: true,
 				// ignore lines that contain a template literal
-				ignoreTemplateLiterals: true,
-			},
+				ignoreTemplateLiterals: true
+			}
 		],
 
 		// Non jsdoc multi line comments should be separate single line comments rather than using a block comment.
 		"multiline-comment-style": [
 			"warn",
-			"separate-lines",
+			"separate-lines"
 		],
 
 		// Allow `new something()` (lowercase first letter) because this is useful when you want to instantiate
@@ -151,37 +160,37 @@ module.exports = {
 			"error",
 			{
 				// allows else if blocks after a return
-				allowElseIf: true,
-			},
+				allowElseIf: true
+			}
 		],
 
 		// disallow empty statements
 		"no-empty": [
 			"error",
 			{
-				allowEmptyCatch: true,
-			},
+				allowEmptyCatch: true
+			}
 		],
 
 		// Disable no-lonely-if https://eslint.org/docs/rules/no-lonely-if
 		"no-lonely-if": [
-			"off",
+			"off"
 		],
 
 		// Allow parameters to functions, and their properties, to be overridden as we do this a lot.
 		"no-param-reassign": [
-			"off",
+			"off"
 		],
 
 		// Allow unary operator (i++)
 		"no-plusplus": [
-			"off",
+			"off"
 		],
 
 		// Override airbnb's "disallow use of Object.prototypes builtins directly"
 		// https://eslint.org/docs/rules/no-prototype-builtins
 		"no-prototype-builtins": [
-			"off",
+			"off"
 		],
 
 		// Copied from airbnb on 2020-09-04 with some commented out to disable.
@@ -190,20 +199,18 @@ module.exports = {
 			"error",
 			// {
 			//     selector: 'ForInStatement',
-			//     message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
-			// },
-			// {
-			//     selector: 'ForOfStatement',
-			//     message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
-			// },
+			//     message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you
+			// want. Use Object.{keys,values,entries}, and iterate over the resulting array.', }, { selector:
+			// 'ForOfStatement', message: 'iterators/generators require regenerator-runtime, which is too heavyweight
+			// for this guide to allow them. Separately, loops should be avoided in favor of array iterations.', },
 			{
 				selector: "LabeledStatement",
-				message: "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
+				message: "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
 			},
 			{
 				selector: "WithStatement",
-				message: "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
-			},
+				message: "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+			}
 		],
 
 		"no-tabs": "off",
@@ -217,7 +224,7 @@ module.exports = {
 			ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
 			ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
 			ImportDeclaration: { minProperties: 4, multiline: true, consistent: true },
-			ExportDeclaration: { minProperties: 4, multiline: true, consistent: true },
+			ExportDeclaration: { minProperties: 4, multiline: true, consistent: true }
 		}],
 
 		// Disable forcing (but still allow) the use of destructing:
@@ -226,31 +233,31 @@ module.exports = {
 		// let a = data.a;
 		// https://eslint.org/docs/rules/prefer-destructuring
 		"prefer-destructuring": [
-			"off",
+			"off"
 		],
 
 		// When Object.assign is called using an object literal as the first argument, this rule requires using the
 		// object spread syntax instead.
 		// This rule should not be used unless ES2018 is supported in your codebase.
 		"prefer-object-spread": [
-			"off",
+			"off"
 		],
 
 		// Disable forcing template literals instead of string concatenation.
 		// https://eslint.org/docs/rules/prefer-template
 		"prefer-template": [
-			"off",
+			"off"
 		],
 
 		quotes: [
 			"warn",
-			"double",
+			"double"
 		],
 
 		radix: "off",
 
 		// Disable forcing variable Declarations to be at the top of their scope.
 		// https://eslint.org/docs/rules/vars-on-top
-		"vars-on-top": "off",
-	},
+		"vars-on-top": "off"
+	}
 };
