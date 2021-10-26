@@ -4,8 +4,20 @@ module.exports = {
 		"eslint-config-airbnb-base",
 		"./rules/base.js"
 	],
-
 	plugins: [
 		"jsdoc"
-	]
+	],
+	settings: {
+		"import/resolver": {
+			node: {
+				extensions: [".js", ",jsx", ".ts", ".tsx"]
+			}
+		},
+		"import/extensions": [
+			".js",
+			".jsx",
+			".ts",
+			".tsx"
+		]
+	}
 };

@@ -1,6 +1,6 @@
 {
     "name": "@smda/eslint-config-smda",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "This is a standard code style for Javascript, based on eslint-config-airbnb-base with some tweaks.",
     "main": "index.js",
     "scripts": {
@@ -13,6 +13,7 @@
     "dependencies": {
         "eslint": "^7.17.0",
         "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.25.2",
         "eslint-plugin-jsdoc": "^37.0.2"
     }
 }
