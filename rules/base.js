@@ -41,11 +41,12 @@ module.exports = {
 		// Set if file extensions (.js, .vue) should be there when importing a file.
 		"import/extensions": ["error", "always", {
 			ts: "never",
-			js: "never",
-			// Require the extension for .vue files because if you are using typescript with Vue and using
-			// aliases, tslint will complain about not finding the module.
-			vue: "always"
+			js: "never"
 		}],
+
+		// Disable import checking because it doesn't work nicely with TS.
+		// TS will complain anyway.
+		"import/no-unresolved": "off",
 
 		// Disable the Airbnb requirement that module imports come before our own files, because it's much easier
 		// to just sort the lines alphabetically.
@@ -214,6 +215,8 @@ module.exports = {
 		],
 
 		"no-tabs": "off",
+
+		"no-underscore-dangle": "off",
 
 		// https://eslint.org/docs/rules/no-use-before-define
 		"no-use-before-define": "off",
