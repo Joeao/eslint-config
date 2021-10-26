@@ -39,10 +39,11 @@ Add add this to your eslint config:
 
 ### Typescript
 
-If you are using Typescript extend this instead:
+If you are using Typescript also extend this::
 
     {
         "extends": [
+			"@smda/eslint-config-smda",
             "@smda/eslint-config-smda/typescript",
         ]
     }
