@@ -19,5 +19,9 @@ module.exports = {
 			".ts",
 			".tsx"
 		]
-	}
+	},
+
+	plugins: [
+		'jsdoc'
+	]
 };
