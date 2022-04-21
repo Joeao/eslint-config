@@ -28,7 +28,7 @@ module.exports = {
 				"@typescript-eslint/no-useless-constructor": "error",
 
 				// Don't require params in jsdoc with typescript.
-				// "jsdoc/require-param": "off",
+				"jsdoc/require-param": "off",
 
 				// Require type annotations to be spaced like this:
 				// (varName: type): returnType
