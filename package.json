@@ -11,9 +11,11 @@
     "license": "ISC",
     "private": false,
     "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.20.0",
+        "@typescript-eslint/parser": "^5.20.0",
         "eslint": "^7.17.0",
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-plugin-import": "^2.25.2",
-        "eslint-plugin-jsdoc": "^37.0.2"
+        "eslint-plugin-jsdoc": "^39.2.7"
     }
 }

@@ -1,12 +1,12 @@
 module.exports = {
+	parser: "@typescript-eslint/parser",
+
 	// airbnb-base has all the ES6 rules without the React stuff
 	extends: [
 		"eslint-config-airbnb-base",
 		"./rules/base.js"
 	],
-	plugins: [
-		"jsdoc"
-	],
+
 	settings: {
 		"import/resolver": {
 			node: {
