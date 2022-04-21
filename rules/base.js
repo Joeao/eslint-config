@@ -175,6 +175,10 @@ module.exports = {
 			"off"
 		],
 
+		"no-path-concat": [
+			"off"
+		],
+
 		// Allow parameters to functions, and their properties, to be overridden as we do this a lot.
 		"no-param-reassign": [
 			"off"
