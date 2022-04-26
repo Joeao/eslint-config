@@ -50,7 +50,12 @@ module.exports = {
 
 		// Disable the Airbnb requirement that module imports come before our own files, because it's much easier
 		// to just sort the lines alphabetically.
-		 "import/order": ["error", { groups: [["builtin", "external", "internal"]] }],
+		"import/order": [
+			"error",
+			{
+				groups: ["builtin", "external", "internal", "sibling"],
+			},
+		],
 
 		// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
 		// Prefer a named export always instead of a default export.

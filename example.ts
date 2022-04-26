@@ -1,7 +1,8 @@
-import * as localImport from "./index";
-import * as anotherLocalImport from "./typescript";
-import * as externalImport from "eslint";
-import * as anotherExternalImport from "eslint/bin/eslint";
+import builtinImport from "fs";
+import externalImport from "eslint";
+import anotherExternalImport from "eslint/bin/eslint";
+import * as anotherInternalImport from "./typescript";
+import * as internalImport from "./index";
 
 const myArray = [
 	"hello",
@@ -16,8 +17,9 @@ const myObject = {
 console.log(
 	myArray,
 	myObject,
-	localImport,
+	internalImport,
 	externalImport,
 	anotherExternalImport,
-	anotherLocalImport
+	anotherInternalImport,
+	builtinImport
 );
