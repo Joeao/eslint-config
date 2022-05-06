@@ -7,10 +7,10 @@ module.exports = {
 
 		// Typescript
 		"plugin:@typescript-eslint/recommended",
-		"./rules/typescript.js"
+		"./rules/typescript.js",
 	],
 
 	plugins: [
-		"@typescript-eslint"
-	]
+		"@typescript-eslint",
+	],
 };

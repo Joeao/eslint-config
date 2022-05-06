@@ -4,24 +4,24 @@ module.exports = {
 	// airbnb-base has all the ES6 rules without the React stuff
 	extends: [
 		"eslint-config-airbnb-base",
-		"./rules/base.js"
+		"./rules/base.js",
 	],
 
 	settings: {
 		"import/resolver": {
 			node: {
-				extensions: [".js", ",jsx", ".ts", ".tsx"]
-			}
+				extensions: [".js", ",jsx", ".ts", ".tsx"],
+			},
 		},
 		"import/extensions": [
 			".js",
 			".jsx",
 			".ts",
-			".tsx"
-		]
+			".tsx",
+		],
 	},
 
 	plugins: [
-		'jsdoc'
-	]
+		"jsdoc",
+	],
 };
