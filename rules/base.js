@@ -54,6 +54,11 @@ module.exports = {
 			"error",
 			{
 				groups: ["builtin", "external", "internal", "sibling"],
+				"newlines-between": "always",
+				alphabetize: {
+					order: "asc", /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */
+					caseInsensitive: true, /* ignore case. Options: [true, false] */
+				},
 			},
 		],
 
@@ -138,7 +143,8 @@ module.exports = {
 			},
 		],
 
-		// Disable: Non jsdoc multi line comments should be separate single line comments rather than using a block comment.
+		// Disable: Non jsdoc multi line comments should be separate single line comments rather than using a block
+		// comment.
 		"multiline-comment-style": "off",
 
 		// Allow `new something()` (lowercase first letter) because this is useful when you want to instantiate
