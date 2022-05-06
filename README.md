@@ -2,6 +2,12 @@
 
 ## Install
 
+Remove existing eslint setups first:
+
+	npm remove eslint prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-config-standard eslint-plugin-prettier
+
+Install this (will also install eslint as a dependency);
+
     npm install @smda/eslint-config-smda --save-dev
 
 ## Usage

@@ -4,6 +4,7 @@ module.exports = {
 			files: ["*.ts", "*.tsx"],
 			rules: {
 				"@typescript-eslint/ban-ts-comment": "off",
+
 				"@typescript-eslint/ban-ts-ignore": "off",
 
 				// Fix incorrectly reported errors with Typescript enums:
@@ -19,6 +20,7 @@ module.exports = {
 				// Seemed like a good idea but it gets annoying to have to put void return types everywhere.
 				"@typescript-eslint/explicit-function-return-type": "off",
 
+				// Fix no-unused vars - use typescript's version.
 				"no-unused-vars": "off",
 				"@typescript-eslint/no-unused-vars": "warn",
 
@@ -39,6 +41,8 @@ module.exports = {
 						after: true,
 					},
 				],
+
+				"@typescript-eslint/consistent-type-imports": "error",
 			},
 		},
 	],
