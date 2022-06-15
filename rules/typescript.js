@@ -43,6 +43,9 @@ module.exports = {
 				],
 
 				"@typescript-eslint/consistent-type-imports": "error",
+
+				semi: "off",
+				"@typescript-eslint/semi": ["error"],
 			},
 		},
 	],

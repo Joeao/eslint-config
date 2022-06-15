@@ -1,8 +1,10 @@
 import builtinImport from "fs";
+
 import externalImport from "eslint";
 import anotherExternalImport from "eslint/bin/eslint";
-import * as anotherInternalImport from "./typescript";
-import * as internalImport from "./index";
+
+import * as internalImport from "../index";
+import * as anotherInternalImport from "../typescript";
 
 const myArray = [
 	"hello",
@@ -23,3 +25,15 @@ console.log(
 	anotherInternalImport,
 	builtinImport
 );
+
+export class MyCoolClass {
+	private hello: string;
+
+	constructor() {
+		this.hello = "world";
+	}
+}
+
+export interface MyCoolInterface {
+	name: string;
+}
