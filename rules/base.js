@@ -38,10 +38,12 @@ module.exports = {
 
 		"func-names": "off",
 
-		// Set if file extensions (.js, .vue) should be there when importing a file.
+		// Set if file extensions (.js, .ts) should be there when importing a file.
 		"import/extensions": ["error", "always", {
 			ts: "never",
+			tsx: "never",
 			js: "never",
+			jsx: "never",
 		}],
 
 		// Disable import checking because it doesn't work nicely with TS.
