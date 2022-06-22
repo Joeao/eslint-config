@@ -40,6 +40,7 @@ module.exports = {
 
 		// Set if file extensions (.js, .ts) should be there when importing a file.
 		"import/extensions": ["error", "always", {
+			"": "never", // https://stackoverflow.com/a/72643821/710630
 			ts: "never",
 			tsx: "never",
 			js: "never",

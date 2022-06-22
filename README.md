@@ -4,7 +4,7 @@
 
 Remove existing eslint setups first:
 
-	npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier
+	npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier eslint-config-standard-react eslint-plugin-react eslint-plugin-react-hooks
 
 Install this (will also install eslint as a dependency);
 
