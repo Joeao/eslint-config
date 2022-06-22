@@ -1,55 +1,56 @@
 # eslint config
 
-## Install
+## Setup
 
 Remove existing eslint setups first:
 
-	npm remove eslint prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-config-standard eslint-plugin-prettier
+	npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier
 
 Install this (will also install eslint as a dependency);
 
     npm install @smda/eslint-config-smda --save-dev
 
-## Usage
+### Javascript
 
-Extend the config in your `.eslintrc`
+Extend the config in your `.eslintrc.js`
 
-Example .eslintrc:
+Example:
 
-    {
-        "root": true,
-        "extends": [
-            "@smda/eslint-config-smda",
-        ]
-    }
-
-### Webpack
-
-If you are using Webpack, install:
-
-    npm install eslint-import-resolver-webpack --save-dev
-
-Add add this to your eslint config:
-
-    "settings": {
-        // Use aliases from Webpack config.
-        "import/resolver": {
-            // "node" is here to fix a problem with built-in packages being marked as unresolved
-            // https://github.com/benmosher/eslint-plugin-import/issues/1396#issuecomment-511007063
-            "node": {},
-            "webpack": {
-                "config": "./webpack.config.js"
-            }
-        }
-    },
+```
+module.exports = {
+	'root': true,
+	'extends': [
+		'@smda/eslint-config-smda',
+	],
+};
+```
 
 ### Typescript
 
-If you are using Typescript also extend this::
+For a Typescript project extend the /typescript config instead:
 
-    {
-        "extends": [
-			"@smda/eslint-config-smda",
-            "@smda/eslint-config-smda/typescript",
-        ]
-    }
+```
+module.exports = {
+	'root': true,
+	'extends': [
+		'@smda/eslint-config-smda/typescript.js',
+	],
+};
+```
+
+### React
+
+For a React project you need to install some additional plugins:
+
+	npm install eslint-plugin-react eslint-plugin-react-hooks --save-dev
+
+Then extend the /react config instead:
+
+```
+module.exports = {
+	'root': true,
+	'extends': [
+		'@smda/eslint-config-smda/react.js',
+	],
+};
+```
