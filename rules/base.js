@@ -39,12 +39,12 @@ module.exports = {
 		"func-names": "off",
 
 		// Set if file extensions (.js, .ts) should be there when importing a file.
+		// .tsx and .jsx are purposefully omitted because non-React projects should not use these, so attention
+		// should be brought to those.
 		"import/extensions": ["error", "always", {
 			"": "never", // https://stackoverflow.com/a/72643821/710630
 			ts: "never",
-			tsx: "never",
 			js: "never",
-			jsx: "never",
 		}],
 
 		// Disable import checking because it doesn't work nicely with TS.
