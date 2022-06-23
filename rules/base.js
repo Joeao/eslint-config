@@ -61,7 +61,7 @@ module.exports = {
 						position: "after",
 					},
 				],
-				groups: ["builtin", "external", "internal", "sibling"],
+				groups: ["builtin", "external", "internal", "parent", "sibling"],
 				"newlines-between": "always",
 				alphabetize: {
 					order: "asc", /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */
