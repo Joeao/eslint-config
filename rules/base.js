@@ -54,6 +54,13 @@ module.exports = {
 		"import/order": [
 			"error",
 			{
+				pathGroups: [
+					{
+						pattern: "@/**",
+						group: "internal",
+						position: "after",
+					},
+				],
 				groups: ["builtin", "external", "internal", "sibling"],
 				"newlines-between": "always",
 				alphabetize: {
