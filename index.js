@@ -1,9 +1,8 @@
 module.exports = {
 	parser: "@typescript-eslint/parser",
 
-	// airbnb-base has all the ES6 rules without the React stuff
 	extends: [
-		"eslint-config-airbnb-base",
+		"@antriver/eslint-config-antriver",
 		"./rules/base.js",
 	],
 

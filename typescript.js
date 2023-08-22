@@ -7,6 +7,7 @@ module.exports = {
 
 		// Typescript
 		"plugin:@typescript-eslint/recommended",
+		"@antriver/eslint-config-antriver/typescript.js",
 		"./rules/typescript.js",
 	],
 
