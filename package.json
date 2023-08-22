@@ -1,6 +1,6 @@
 {
     "name": "@smda/eslint-config-smda",
-    "version": "2.1.1",
+    "version": "3.0.0",
     "description": "This is a standard code style for Javascript, based on eslint-config-airbnb-base with some tweaks.",
     "main": "index.js",
     "scripts": {
