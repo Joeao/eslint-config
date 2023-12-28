@@ -69,5 +69,8 @@ module.exports = {
 			"warn",
 			"double",
 		],
+
+		"jsdoc/newline-after-description": "off"
+
 	},
 };
