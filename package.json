@@ -1,29 +1,29 @@
 {
-    "name": "@joeao/eslint-config-joe",
-    "version": "6.0.0",
-    "description": "This is a standard code style for Javascript, based on eslint-config-airbnb-base with some tweaks.",
-    "main": "index.js",
-    "scripts": {
-        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-        "lintfix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
-    },
-    "author": "",
-    "license": "ISC",
-    "private": false,
-    "dependencies": {
-        "@antriver/eslint-config-antriver": "^2.0.0",
-        "@typescript-eslint/eslint-plugin": "^6.16.0",
-        "@typescript-eslint/parser": "^6.16.0",
-        "eslint-plugin-react": "^7.33.2",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "eslint-plugin-react-refresh": "^0.4.5"
-    },
-    "overrides": {
-        "@antriver/eslint-config-antriver": {
-            "eslint": "8.56.0",
-            "eslint-config-airbnb-base": "15.0.0",
-            "eslint-plugin-import": "2.29.1",
-            "eslint-plugin-jsdoc": "46.9.1"
-        }
-    }
+	"name": "@joeao/eslint-config-joe",
+	"version": "6.0.0",
+	"description": "This is a standard code style for Javascript, based on eslint-config-airbnb-base with some tweaks.",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"lintfix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+	},
+	"author": "",
+	"license": "ISC",
+	"private": false,
+	"dependencies": {
+		"@antriver/eslint-config-antriver": "^2.0.0",
+		"@typescript-eslint/eslint-plugin": "^6.16.0",
+		"@typescript-eslint/parser": "^6.16.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.5"
+	},
+	"overrides": {
+		"@antriver/eslint-config-antriver": {
+			"eslint": "8.56.0",
+			"eslint-config-airbnb-base": "15.0.0",
+			"eslint-plugin-import": "2.29.1",
+			"eslint-plugin-jsdoc": "46.9.1"
+		}
+	}
 }
