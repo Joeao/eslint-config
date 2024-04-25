@@ -4,11 +4,11 @@
 
 Remove existing eslint setups first:
 
-	npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier eslint-config-standard-react eslint-plugin-react eslint-plugin-react-hooks
+    npm remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier eslint-config-standard-react eslint-plugin-react eslint-plugin-react-hooks
 
 Install this (will also install eslint as a dependency);
 
-    npm install @smda/eslint-config-smda --save-dev
+    npm install @joeao/eslint-config-joe --save-dev
 
 ### Javascript
 
@@ -20,7 +20,7 @@ Example:
 module.exports = {
 	'root': true,
 	'extends': [
-		'@smda/eslint-config-smda',
+		'@joeao/eslint-config-joe',
 	],
 };
 ```
@@ -33,7 +33,7 @@ For a Typescript project extend the /typescript config instead:
 module.exports = {
 	'root': true,
 	'extends': [
-		'@smda/eslint-config-smda/typescript.js',
+		'@joeao/eslint-config-joe/typescript.js',
 	],
 };
 ```
@@ -42,7 +42,7 @@ module.exports = {
 
 For a React project you need to install some additional plugins:
 
-	npm install eslint-plugin-react eslint-plugin-react-hooks --save-dev
+    npm install eslint-plugin-react eslint-plugin-react-hooks --save-dev
 
 Then extend the /react config instead:
 
@@ -50,7 +50,7 @@ Then extend the /react config instead:
 module.exports = {
 	'root': true,
 	'extends': [
-		'@smda/eslint-config-smda/react.js',
+		'@joeao/eslint-config-joe/react.js',
 	],
 };
 ```
