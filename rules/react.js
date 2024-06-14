@@ -1,7 +1,7 @@
 module.exports = {
 	rules: {
 		// Add tsx and jsx file extensions.
-		"import/extensions": ["error", "always", {
+		"import/extensions": ["error", "ignorePackages", {
 			"": "never", // https://stackoverflow.com/a/72643821/710630
 			"ts": "never",
 			"tsx": "never",
@@ -26,6 +26,7 @@ module.exports = {
 			children: "ignore",
 		}],
 		"jsx-quotes": ["error"],
+		"react/react-in-jsx-scope": ["never"],
 	},
 	plugins: ["react-refresh"],
 };

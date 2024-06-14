@@ -7,6 +7,8 @@ module.exports = {
 		"plugin:react/recommended",
 		"plugin:react-hooks/recommended",
 
+		"plugin:react/jsx-runtime",
+
 		// Custom React rules.
 		"./rules/react.js",
 	],
@@ -23,7 +25,7 @@ module.exports = {
 			".ts",
 			".tsx",
 		],
-		react: {
+		"react": {
 			version: "detect",
 		},
 	},
