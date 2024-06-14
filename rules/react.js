@@ -26,7 +26,7 @@ module.exports = {
 			children: "ignore",
 		}],
 		"jsx-quotes": ["error"],
-		"react/react-in-jsx-scope": ["never"],
+		"react/react-in-jsx-scope": 0,
 	},
 	plugins: ["react-refresh"],
 };
