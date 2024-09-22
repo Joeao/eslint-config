@@ -1,8 +1,0 @@
-{
-    // This .eslintrc is for the files in the package itself not for users of the package.
-    // index.js contains the rules for the config the package is exporting.
-    "extends": [
-        "eslint-config-airbnb-base",
-        "./index.js"
-    ]
-}
