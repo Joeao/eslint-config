@@ -11,7 +11,6 @@ module.exports = {
 
 		"react/display-name": 0,
 
-		"react-refresh/only-export-components": "warn",
 		"react/jsx-closing-bracket-location": ["error"],
 		"react/jsx-tag-spacing": ["error", { beforeSelfClosing: "proportional-always" }],
 		"react/jsx-indent-props": ["error", "tab"],
@@ -27,6 +26,5 @@ module.exports = {
 		}],
 		"jsx-quotes": ["error"],
 		"react/react-in-jsx-scope": 0,
-	},
-	plugins: ["react-refresh"],
+	}
 };
