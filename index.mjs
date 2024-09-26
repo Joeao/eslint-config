@@ -14,7 +14,6 @@ const compat = new FlatCompat({
 });
 
 export default [
-    ...compat.extends("@antriver/eslint-config-antriver", "./rules/base.js"),
     {
         plugins: {
             jsdoc,
@@ -25,13 +24,13 @@ export default [
         },
 
         settings: {
-            "import/resolver": {
+            "import-x/resolver": {
                 node: {
                     extensions: [".js", ".ts"],
                 },
             },
 
-            "import/extensions": [".js", ".ts"],
+            "import-x/extensions": [".js", ".ts"],
         },
     },
 ];

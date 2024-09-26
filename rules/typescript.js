@@ -18,9 +18,10 @@ module.exports = {
 		],
 		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
 		"no-nested-ternary": 0,
-		"import/no-dynamic-require": "off",
-		"import/no-extraneous-dependencies": ["error", { devDependencies: true }],
-		"@typescript-eslint/member-delimiter-style": ["error"],
+		"import-x/no-dynamic-require": "off",
+		"import-x/no-extraneous-dependencies": ["error", {
+				devDependencies: true,
+			}],		"@typescript-eslint/member-delimiter-style": ["error"],
 		"@typescript-eslint/explicit-function-return-type": [
 			"error",
 			{

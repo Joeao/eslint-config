@@ -1,7 +1,7 @@
 module.exports = {
 	rules: {
 		// Add tsx and jsx file extensions.
-		"import/extensions": ["error", "ignorePackages", {
+		"import-x/extensions": ["error", "ignorePackages", {
 			"": "never", // https://stackoverflow.com/a/72643821/710630
 			"ts": "never",
 			"tsx": "never",

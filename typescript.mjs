@@ -15,7 +15,6 @@ const compat = new FlatCompat({
 
 export default [...compat.extends(
     "plugin:@typescript-eslint/recommended",
-    "@antriver/eslint-config-antriver/typescript.js",
     "./index.js",
     "./rules/typescript.js",
 ), {

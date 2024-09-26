@@ -27,13 +27,13 @@ export default [...fixupConfigRules(compat.extends(
     },
 
     settings: {
-        "import/resolver": {
+        "import-x/resolver": {
             node: {
                 extensions: [".js", ".jsx", ".ts", ".tsx"],
             },
         },
 
-        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import-x/extensions": [".js", ".jsx", ".ts", ".tsx"],
 
         react: {
             version: "detect",
