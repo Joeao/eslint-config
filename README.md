@@ -33,7 +33,7 @@ For a Typescript project extend the /typescript config instead:
 module.exports = {
 	'root': true,
 	'extends': [
-		'@joeao/eslint-config-joe/typescript.js',
+		'@joeao/eslint-config-joe/typescript.mjs',
 	],
 };
 ```
@@ -50,7 +50,7 @@ Then extend the /react config instead:
 module.exports = {
 	'root': true,
 	'extends': [
-		'@joeao/eslint-config-joe/react.js',
+		'@joeao/eslint-config-joe/react.mjs',
 	],
 };
 ```

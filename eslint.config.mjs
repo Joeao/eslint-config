@@ -10,4 +10,4 @@ const compat = new FlatCompat({
     recommendedConfig: js.configs.recommended,
     allConfig: js.configs.all
 });
-export default [...compat.extends("eslint-config-airbnb-base", "./index.js")];
+export default [...compat.extends("eslint-config-airbnb-base", "./index.mjs")];

@@ -15,11 +15,11 @@ const compat = new FlatCompat({
 });
 
 export default [...fixupConfigRules(compat.extends(
-    "./typescript.js",
+    "./typescript.mjs",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
-    "./rules/react.js",
+    "./rules/react.mjs",
 )), {
     plugins: {
         react: fixupPluginRules(react),

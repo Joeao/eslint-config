@@ -15,8 +15,8 @@ const compat = new FlatCompat({
 
 export default [...compat.extends(
     "plugin:@typescript-eslint/recommended",
-    "./index.js",
-    "./rules/typescript.js",
+    "./index.mjs",
+    "./rules/typescript.mjs",
 ), {
     plugins: {
         "@typescript-eslint": typescriptEslint,
