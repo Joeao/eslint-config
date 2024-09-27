@@ -1,5 +1,6 @@
-export default {
-	rules: {
+import { config } from "typescript-eslint";
+
+const typescriptConfig: Partial<typeof config> = {	rules: {
 		"@typescript-eslint/no-empty-function": ["warn", { allow: ["arrowFunctions"] }],
 		// Fix no-unused vars - use typescript's version.
 		"no-unused-vars": "off",
@@ -30,3 +31,5 @@ export default {
 		],
 	},
 };
+
+export default typescriptConfig;

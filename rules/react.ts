@@ -1,4 +1,6 @@
-export default {
+import { config } from "typescript-eslint";
+
+const reactConfig: Partial<typeof config> = {
 	rules: {
 		// Add tsx and jsx file extensions.
 		"import-x/extensions": ["error", "ignorePackages", {
@@ -28,3 +30,5 @@ export default {
 		"react/react-in-jsx-scope": 0,
 	}
 };
+
+export default reactConfig;
