@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	rules: {
 		// Add tsx and jsx file extensions.
 		"import-x/extensions": ["error", "ignorePackages", {

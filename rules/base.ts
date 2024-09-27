@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	rules: {
 		// require trailing commas in multiline object literals
 		"comma-dangle": ["error", {

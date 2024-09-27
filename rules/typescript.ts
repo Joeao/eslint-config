@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	rules: {
 		"@typescript-eslint/no-empty-function": ["warn", { allow: ["arrowFunctions"] }],
 		// Fix no-unused vars - use typescript's version.
