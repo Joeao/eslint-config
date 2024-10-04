@@ -1,11 +1,13 @@
 {
 	"name": "@joeao/eslint-config-joe",
-	"version": "9.1.0",
+	"version": "10.1.0",
 	"description": "This is a standard code style for Javascript, based on eslint-config-airbnb-base with some tweaks.",
 	"main": "index.mjs",
 	"scripts": {
 		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-		"lintfix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+		"lintfix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+		"build": "tsc",
+		"prepare": "bun run build"
 	},
 	"author": "",
 	"license": "ISC",
